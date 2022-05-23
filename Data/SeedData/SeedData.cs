@@ -57,6 +57,33 @@ namespace MVCPrimerEjemplo.Models
                         Price = 3.99M
                     }
                 );
+
+                if (context.Cinema.Any())
+                {
+                    return;   // DB has been seeded
+                }
+
+                context.Cinema.AddRange(
+                    new Cinema
+                    {
+                        Name = "Primer cine",
+                        NumberOfRooms = 2,
+                        Price = 7.99M
+                    },
+                    new Cinema
+                    {
+                        Name = "Segundo cine",
+                        NumberOfRooms = 4,
+                        Price = 7.99M
+                    },
+                    new Cinema
+                    {
+                        Name = "tercer cine",
+                        NumberOfRooms = 43,
+                        Price = 6
+                    }
+                );
+
                 context.SaveChanges();
             }
         }

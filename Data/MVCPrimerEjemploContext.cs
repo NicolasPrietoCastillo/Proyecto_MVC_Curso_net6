@@ -15,5 +15,7 @@ namespace MVCPrimerEjemplo.Data
         }
 
         public DbSet<MVCPrimerEjemplo.Models.Movie>? Movie { get; set; }
+
+        public DbSet<MVCPrimerEjemplo.Models.Cinema>? Cinema { get; set; }
     }
 }
