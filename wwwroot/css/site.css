@@ -7,7 +7,6 @@ html {
     font-size: 16px;
   }
 }
-
 html {
   position: relative;
   min-height: 100%;
@@ -16,3 +15,178 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
+.shadowed::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+header .container-fluid {
+  padding-top: 0;
+}
+
+.container-fluid {
+  padding-top: 3%;
+  overflow: hidden;
+}
+
+.btn {
+  color: white;
+  border-color: white;
+}
+.btn:hover {
+  background-color: white;
+  color: rgb(228, 0, 0);
+}
+
+main {
+  z-index: 0;
+}
+main .home_header {
+  background-image: url("/img/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin: 0 -15px;
+  height: 530px;
+}
+main .home_header .presentation_text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: white;
+}
+main .card_links_title {
+  margin-top: 40px;
+}
+main .card_links {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+main .card_links a {
+  height: 100%;
+  text-decoration: none;
+}
+main .card_links a .card_img {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main .card_links a .card_img span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 300px;
+  color: white;
+  font-size: 2.5rem;
+}
+main .card_links a .card-body .card-text {
+  color: black;
+}
+main .card_links .movies .card_img {
+  background-image: url("/img/card_films.jpg");
+}
+main .card_links .cinemas .card_img {
+  background-image: url("/img/card_cinema.jpg");
+}
+
+.movies_header {
+  background-image: url("/img/movies_header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin: 0 -15px;
+  height: 530px;
+  position: relative;
+}
+.movies_header .presentation_text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: white;
+}
+.movies_header .presentation_text h1 {
+  line-height: 400px;
+}
+
+.filter {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 40px 0;
+}
+.filter .filert_button {
+  padding: 2px 0.75rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+}
+.filter .filert_button:hover {
+  border-color: rgb(228, 0, 0);
+  color: rgb(228, 0, 0);
+}
+.filter .create_button {
+  position: absolute;
+  right: 15%;
+}
+.filter .create_button .btn {
+  padding: 2px 0.75rem;
+  border-color: black;
+  color: black;
+}
+.filter .create_button .btn:hover {
+  border-color: rgb(228, 0, 0);
+  color: rgb(228, 0, 0);
+}
+
+.table {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.movies_crud_form {
+  max-width: 50%;
+  margin: 40px auto;
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 20px 40px;
+}
+.movies_crud_form h1, .movies_crud_form h3, .movies_crud_form h4 {
+  text-align: center;
+}
+.movies_crud_form .form-control {
+  width: 100%;
+}
+
+.details_form, .delete_form {
+  max-width: 30%;
+}
+
+/*# sourceMappingURL=site.css.map */

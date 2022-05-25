@@ -2,7 +2,52 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="p-3 p-md-5 text-center home_header shadowed">
+    <div class="col-md-5 p-lg-5 mx-auto my-5 presentation_text">
+      	<h1 class="display-4 fw-normal">Proyecto de películas</h1>
+      	<p class="lead fw-normal">Página concepto cuyo propósito principal es tener una primera toma de contacto con el framework ASP.NET Core.</p>
+      	<a class="btn" asp-controller="Cinemas" asp-action="Cinemas">Lista de cines</a>
+    </div>
+</div>
+
+<div class="row card_links_title">
+	<div class="col-12">
+		<h2 class="text-center">
+			Páginas principales
+		</h2>
+	</div>
+</div>
+
+<div class="row card_links">
+	<div class="col-12 col-md-6 col-xl-4">
+		<a class="card shadow-sm movies" asp-controller="Movies" asp-action="Index">
+			
+			<div class="card_img shadowed">
+				<span>
+					Todas las películas
+				</span>
+			</div>
+
+			<div class="card-body">
+				<p class="card-text">Página que muestra un listado de películas y permite realizar operaciones CRUD y filtrado de datos. Se utilizó la herramienta de scafolding para generar estas páginas.
+				</p>
+			</div>
+		</a>
+	</div>
+
+	<div class="col-12 col-md-6 col-xl-4">
+		<a class="card shadow-sm cinemas" asp-controller="Cinemas" asp-action="Cinemas">
+			
+			<div class="card_img shadowed">
+				<span>
+					Todos los cines
+				</span>
+			</div>
+
+			<div class="card-body">
+				<p class="card-text">Página que muestra un listado de cines y permite realizar filtrado de datos. Los cines se dividen en 2 clases conectadas: Cinema.cs y Cinema_Room.cs
+				</p>
+			</div>
+		</a>
+	</div>
 </div>
